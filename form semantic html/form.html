@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Mahasiswa</title>
+</head>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 8px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Form Pendaftaran Mahasiswa</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Data Mahasiswa</h2>
+
+            <form>
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <label for="jenisKelamin">Jenis Kelamin:</label>
+            
+            <div>  
+                <input type="radio" id="lakilaki" name="jenisKelamin" value="laki-laki">
+                <label for="lakilaki">Laki-Laki</label>
+             
+                <input type="radio" id="perempuan" name="jenisKelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label>
+            
+            </div> 
+                <label for="jurusan">Jurusan:</label>
+                <select id="jurusan" name="jurusan">
+                    <option value="informatika">Informatika</option>
+                    <option value="sistem-informasi">Sistem Informasi</option>
+                    <option value="teknik-komputer">Teknik Komputer</option>
+                </select>
+
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
